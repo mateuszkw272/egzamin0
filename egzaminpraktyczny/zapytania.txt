@@ -1,0 +1,14 @@
+kw1:
+SELECT imie,nazwisko,klasa FROM uczniowie WHERE klasa = '2B';
+kw3:
+SELECT DISTINCT 
+uczniowie.imie,
+uczniowie.nazwisko,
+uczniowie.klasa
+FROM ucziowie
+ JOIN typy_posilkow ON typy_posilkow.id_typu = posilki.id_typu,
+JOIN zamowienia ON posilki.id_posilku = zamowienia.id_posilku,
+ JOIN uczniowie ON zamowienia.id_ucznia = uczniowie.id_ucznia,
+ JOIN typy_alergii ON uczniowie.id_alergii = typy_alergii.id_alergii
+WHERE posilki.wegetarianski= min(1) 
+kw4:

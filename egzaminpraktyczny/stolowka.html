@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styl.css">
+    <title>Stołówka</title>
+</head>
+<body>
+    <header>
+        <img src="baner1.jpg" alt="grafika z logiem" onclick="klick()">
+        <section id="akapit">
+            <p>Stołówka</p>
+            <img src="baner2.jpg" alt="grafika z logiem" onclick="klick()">
+            
+        </section>
+    </header>
+    <section id="left">
+        <article class="cos">
+            <h1>Zupy</h1>
+            <img src="pomidorowa.png" alt="zupa pomidorowa" title="zupa pomidorowa" onclick="klick()">
+            <img src="ogorkowa.png" alt="zupa ogórkowa" title="zupa ogórkowa" onclick="klick()">
+        </article>
+        <article class="cos">
+            <h1>II danie</h1>
+            <img src="zestaw1.png" alt="zestaw dnia" title="zestaw dnia" onclick="klick()">
+            <img src="nalesniki.png" alt="nalesniki" title="nalesniki" onclick="klick()">
+            <img src="placki.png" alt="placki ziemniaczane" title="placki ziemniaczane" onclick="klick()">
+        </article>
+        <article class="cos">
+            <h1>Dodatki</h1>
+            <img src="kompot.png" alt="kompo" title="kompot" onclick="klick()">
+        </article>
+    </section>
+    <section id="right">
+        <label for="podsumowanie">Podsumowanie</label>
+        <p></p>
+    </section>
+    <footer>
+        <p>Stronę wykonał:000000000</p>
+    </footer>
+    <script>
+        function klick(){
+            
+            let obrazek = document.querySelector("img");
+            obrazek.setAttribute("class","obraz");
+        }
+    </script>
+    
+</body>
+</html>

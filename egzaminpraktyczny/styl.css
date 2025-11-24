@@ -1,0 +1,61 @@
+*{
+    font-family: Century,serif;
+}
+header{
+    display: flex;
+    vertical-align: middle;
+    word-spacing: 10px;
+    align-items: center;
+}
+header img{
+    display: inline-block;
+}
+header,footer{
+    background-color: #CCA10B;
+    color: white;
+    font-style: italic;
+    padding: 5px;
+    text-align: center;
+
+}
+#left,#right{
+    background-color: rgba(5, 160, 88, 80%);
+    float: left;
+}
+#left{
+    text-align: left;
+    width: 70%;
+    height: 620px;
+    
+
+
+}
+#right{
+    font-family:"LucidaConsole", "Consolas", "Courier New", monospace;
+    width: 30%;
+    height: 600px;
+    padding-top: 20px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+#akapit{
+    font-weight: bold;
+    font-size: 32px;
+    text-shadow: 2px 2px 4px black 60%;
+    display: flex;
+
+}
+h1{
+    padding-left: 30px;
+
+}
+.cos img{
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    margin-left: 30px;
+}
+.obraz {
+    border-radius:8px ;
+    box-shadow: 10px black 70%;
+}
